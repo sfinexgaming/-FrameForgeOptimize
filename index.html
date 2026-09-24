@@ -3,134 +3,164 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Practical Windows gaming optimization guides for higher FPS, lower input latency and smoother gameplay.">
-<meta name="theme-color" content="#0a0d14">
+<meta name="description" content="FrameForge: step-by-step Windows gaming optimization for FPS, input latency, ping and smoother gameplay.">
+<meta name="theme-color" content="#080a0f">
 <title>FrameForge — Windows Gaming Optimization</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="nav">
   <a class="brand" href="index.html"><span>FF</span> FrameForge</a>
-  <nav>
-    <a href="#guides">Guides</a>
-    <a href="#tools">Tools</a>
-    <a href="#games">Games</a>
-    <a href="#about">About</a>
-  </nav>
-  <a class="nav-btn" href="#tools">Optimize PC</a>
+  <nav><a href="#roadmap">Optimize</a><a href="#guides">Guides</a><a href="#games">Games</a><a href="#about">About</a></nav>
+  <a class="nav-btn" href="#roadmap">Start</a>
 </header>
 
 <main>
 <section class="hero">
   <div class="hero-copy">
     <div class="eyebrow">WINDOWS GAMING OPTIMIZATION</div>
-    <h1>More FPS.<br><em>Less delay.</em><br>Better gaming.</h1>
-    <p>Practical, reversible Windows and game optimizations for competitive players. No fake “one-click FPS booster” promises.</p>
-    <div class="hero-actions">
-      <a class="primary" href="#tools">Start optimizing →</a>
-      <a class="secondary" href="#guides">Explore guides</a>
-    </div>
-    <div class="trust"><span>✓ Free guides</span><span>✓ No bloatware</span><span>✓ Reversible tweaks</span></div>
+    <h1>Optimize your PC.<br><em>One step at a time.</em></h1>
+    <p>Follow a practical gaming setup from GPU drivers to Windows settings, AtlasOS, networking and game configuration. Change one thing, test it, then move on.</p>
+    <div class="hero-actions"><a class="primary" href="#roadmap">Start the optimization →</a><a class="secondary" href="#guides">Browse guides</a></div>
+    <div class="trust"><span>✓ Free</span><span>✓ Official downloads</span><span>✓ Measurable tweaks</span></div>
   </div>
   <div class="pc-card">
-    <div class="card-top"><span>OPTIMIZATION CHECK</span><span class="live">● READY</span></div>
-    <div class="meter"><div></div></div>
-    <div class="stat-row"><span>Windows gaming setup</span><strong>READY</strong></div>
-    <div class="stat-row"><span>Background apps</span><strong>CHECK</strong></div>
-    <div class="stat-row"><span>GPU settings</span><strong>CHECK</strong></div>
-    <div class="stat-row"><span>Game settings</span><strong>CHECK</strong></div>
-    <a class="scan" href="#tools">Run free checklist</a>
+    <div class="card-top"><span>FRAMEFORGE ROADMAP</span><span class="live">● READY</span></div>
+    <div class="roadmap-mini"><div><b>01</b><span>GPU driver</span></div><div><b>02</b><span>Windows baseline</span></div><div><b>03</b><span>Advanced / Atlas</span></div><div><b>04</b><span>Latency & network</span></div><div><b>05</b><span>Game settings</span></div></div>
   </div>
 </section>
 
-<section class="section" id="guides">
+<section class="section" id="roadmap">
   <div class="section-head">
-    <div><div class="eyebrow">START HERE</div><h2>Optimization guides</h2></div>
-    <p>Focus on changes that can be measured, understood and undone.</p>
+    <div><div class="eyebrow">STEP-BY-STEP</div><h2>Optimize your gaming PC</h2></div>
+    <p>Start at Step 1 and work down. You don't need to do every advanced step.</p>
   </div>
-  <div class="grid">
-    <article class="guide featured">
-      <div class="tag">WINDOWS 11</div><h3>Windows 11 Gaming Optimization: The Safe Checklist</h3>
-      <p>A step-by-step baseline for Game Mode, startup apps, power settings, graphics preferences and background processes.</p>
-      <a href="windows-11-gaming-optimization.html">Read guide →</a>
+
+  <div class="steps">
+    <article class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <div class="step-label">GPU DRIVER</div>
+        <h3>Update your graphics driver</h3>
+        <p>Choose your GPU brand. These buttons take you directly to the manufacturer's official driver page.</p>
+        <div class="choice-grid">
+          <a class="choice nvidia" href="https://www.nvidia.com/en-eu/geforce/drivers/" target="_blank" rel="noopener"><strong>NVIDIA</strong><span>GeForce Game Ready drivers →</span></a>
+          <a class="choice amd" href="https://www.amd.com/en/support/download/drivers.html" target="_blank" rel="noopener"><strong>AMD</strong><span>Radeon drivers & Auto-Detect →</span></a>
+        </div>
+        <details><summary>After installing</summary><ul><li>Restart the PC.</li><li>Open your game and test the same scene/settings you used before.</li><li>Record average FPS and 1% lows if possible.</li></ul></details>
+      </div>
     </article>
-    <article class="guide"><div class="icon">⚡</div><h3>Reduce Input Latency</h3><p>Display refresh rate, V-Sync, frame caps, fullscreen modes and mouse settings.</p><a href="#">Coming soon →</a></article>
-    <article class="guide"><div class="icon">📈</div><h3>Fix FPS Drops & Stutters</h3><p>A diagnostic path for CPU/GPU limits, thermals, RAM, drivers and background processes.</p><a href="#">Coming soon →</a></article>
-    <article class="guide"><div class="icon">🧩</div><h3>AtlasOS for Gaming</h3><p>How AtlasOS reduces background activity, what you need before installing it, and the current official installation path.</p><a href="atlasos-gaming-huide.html">Read guide →</a></article>
-    <article class="guide"><div class="icon">🌐</div><h3>Gaming Ping Optimization</h3><p>What actually affects latency and which Windows/router changes are worth testing.</p><a href="#">Coming soon →</a></article>
+
+    <article class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <div class="step-label">WINDOWS BASELINE</div>
+        <h3>Clean up Windows for gaming</h3>
+        <p>Do the safe fundamentals before advanced tweaks.</p>
+        <ol class="action-list">
+          <li><b>Set monitor refresh rate:</b> Settings → System → Display → Advanced display.</li>
+          <li><b>Enable Game Mode:</b> Settings → Gaming → Game Mode.</li>
+          <li><b>Check startup apps:</b> Task Manager → Startup apps → disable apps you don't need.</li>
+          <li><b>Graphics preference:</b> Settings → System → Display → Graphics → select the game and choose the appropriate GPU option.</li>
+          <li><b>Check temperatures:</b> make sure CPU/GPU temperatures and clocks remain normal under load.</li>
+          <li><b>Check RAM:</b> confirm the expected capacity and supported memory configuration.</li>
+        </ol>
+        <a class="inline-link" href="windows-11-gaming-optimization.html">Open the full Windows 11 checklist →</a>
+      </div>
+    </article>
+
+    <article class="step-card advanced">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <div class="step-label">ADVANCED · OPTIONAL</div>
+        <h3>AtlasOS</h3>
+        <p>AtlasOS is an advanced Windows modification. It can reduce background activity, but it is not required for gaming and there is no guaranteed FPS gain.</p>
+        <div class="notice"><strong>Before installing:</strong> back up your files. Atlas' current documentation requires a full Windows reinstall for its supported installation path.</div>
+        <div class="button-row"><a class="primary small" href="atlasos-gaming-huide.html">Read the AtlasOS guide →</a><a class="secondary small" href="https://docs.atlasos.net/getting-started/install/install-playbook/" target="_blank" rel="noopener">Official Atlas docs</a></div>
+      </div>
+    </article>
+
+    <article class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <div class="step-label">LATENCY</div>
+        <h3>Reduce input delay</h3>
+        <p>Work through these in order instead of applying random “latency tweaks”.</p>
+        <ol class="action-list">
+          <li><b>Use the monitor's maximum supported refresh rate.</b></li>
+          <li><b>Check V-Sync:</b> test with your game's recommended low-latency configuration.</li>
+          <li><b>Use a stable FPS cap:</b> compare uncapped versus a cap your PC can sustain.</li>
+          <li><b>Mouse polling:</b> test your mouse's supported polling rates; higher is not automatically better on every system.</li>
+          <li><b>Use NVIDIA Reflex or AMD Anti-Lag 2 when supported by the game</b> and follow the game's documentation.</li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="step-card">
+      <div class="step-num">05</div>
+      <div class="step-body">
+        <div class="step-label">NETWORK</div>
+        <h3>Optimize ping and connection stability</h3>
+        <p>Windows tweaks cannot magically change the physical route to a game server. Focus on the things you can measure.</p>
+        <ol class="action-list">
+          <li><b>Use Ethernet</b> when possible.</li>
+          <li><b>Stop heavy uploads/downloads</b> while gaming.</li>
+          <li><b>Test at the same time of day</b> when comparing connections.</li>
+          <li><b>Check the game's server/region selection</b> and choose the closest appropriate region.</li>
+          <li><b>Measure packet loss and jitter</b>, not just the headline ping number.</li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="step-card">
+      <div class="step-num">06</div>
+      <div class="step-body">
+        <div class="step-label">GAME SETTINGS</div>
+        <h3>Configure the game for your hardware</h3>
+        <p>Start with the game's own settings. Competitive settings are not identical for every PC.</p>
+        <div class="game-settings-grid">
+          <div><b>GPU-limited?</b><span>Lower resolution or GPU-heavy settings first.</span></div>
+          <div><b>CPU-limited?</b><span>Lower CPU-heavy settings and background load.</span></div>
+          <div><b>Stuttering?</b><span>Investigate frametime, shaders, drivers and thermals.</span></div>
+          <div><b>Competitive?</b><span>Prioritize consistent frametime and a stable FPS target.</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="step-card final-step">
+      <div class="step-num">07</div>
+      <div class="step-body">
+        <div class="step-label">VERIFY</div>
+        <h3>Benchmark before and after</h3>
+        <p>This is the step most “FPS optimization” websites skip. Don't trust a tweak because it sounds good.</p>
+        <div class="verify-grid">
+          <span>Average FPS</span><span>1% lows</span><span>Frametime</span><span>CPU/GPU usage</span><span>Temperatures</span><span>Ping / packet loss</span>
+        </div>
+        <p class="muted">Change one variable at a time. If performance gets worse, revert the change.</p>
+      </div>
+    </article>
   </div>
 </section>
 
-<section class="dark-section" id="tools">
-  <div class="section-head">
-    <div><div class="eyebrow">FREE TOOLS</div><h2>Know what to change.</h2></div>
-    <p>Start with a simple checklist before changing advanced settings. Advanced guides include AtlasOS and other Windows configurations.</p>
-  </div>
-  <div class="tool-grid">
-    <div class="tool">
-      <span class="tool-number">01</span><h3>Gaming Optimization Checklist</h3>
-      <p>Tick off the fundamentals before touching advanced tweaks.</p>
-      <a href="#checklist">Open checklist →</a>
-    </div>
-    <div class="tool">
-      <span class="tool-number">02</span><h3>PC Specs Guide</h3>
-      <p>Understand whether your CPU, GPU or RAM is likely limiting a game.</p>
-      <a href="#games">View guide →</a>
-    </div>
-    <div class="tool">
-      <span class="tool-number">03</span><h3>FPS Troubleshooter</h3>
-      <p>Follow the symptoms to find the most likely cause of poor performance.</p>
-      <a href="#troubleshooter">Open troubleshooter →</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="checklist">
-  <div class="section-head"><div><div class="eyebrow">QUICK CHECK</div><h2>Your 10-minute baseline</h2></div></div>
-  <div class="checklist">
-    <label><input type="checkbox"> Install the latest stable GPU driver for your hardware</label>
-    <label><input type="checkbox"> Set your monitor to its intended refresh rate</label>
-    <label><input type="checkbox"> Enable Windows Game Mode</label>
-    <label><input type="checkbox"> Disable unnecessary startup/background apps</label>
-    <label><input type="checkbox"> Select the correct GPU for the game in Windows Graphics settings</label>
-    <label><input type="checkbox"> Check CPU/GPU temperatures under load</label>
-    <label><input type="checkbox"> Confirm RAM is running at its intended supported speed</label>
-    <label><input type="checkbox"> Test V-Sync and frame-cap settings rather than blindly disabling everything</label>
-    <label><input type="checkbox"> Restart after major driver/settings changes</label>
-    <label><input type="checkbox"> Measure FPS and frametime before and after changes</label>
+<section class="dark-section" id="guides">
+  <div class="section-head"><div><div class="eyebrow">DEEP GUIDES</div><h2>Go deeper when you need it.</h2></div><p>Detailed pages for specific Windows and gaming problems.</p></div>
+  <div class="grid">
+    <article class="guide featured"><div class="tag">WINDOWS 11</div><h3>Windows 11 Gaming Optimization</h3><p>Safe baseline settings and what not to disable.</p><a href="windows-11-gaming-optimization.html">Read guide →</a></article>
+    <article class="guide"><div class="tag">ATLASOS</div><h3>AtlasOS for Gaming</h3><p>Prerequisites, reinstall path, Playbook and post-install steps.</p><a href="atlasos-gaming-huide.html">Read guide →</a></article>
+    <article class="guide"><div class="icon">📈</div><h3>FPS Drops & Stutters</h3><p>Diagnose CPU/GPU limits, frametime, RAM, thermals and drivers.</p></article>
+    <article class="guide"><div class="icon">🌐</div><h3>Ping & Network</h3><p>Understand latency, jitter, packet loss and server routing.</p></article>
   </div>
 </section>
 
 <section class="section" id="games">
-  <div class="section-head"><div><div class="eyebrow">GAME HUBS</div><h2>Optimization by game</h2></div></div>
-  <div class="games">
-    <div class="game-card"><b>FORTNITE</b><span>Performance Mode · FPS · input delay</span></div>
-    <div class="game-card"><b>VALORANT</b><span>Low latency · FPS · Windows setup</span></div>
-    <div class="game-card"><b>CS2</b><span>FPS · frametime · competitive settings</span></div>
-    <div class="game-card"><b>WARZONE</b><span>GPU settings · stutters · FPS</span></div>
-  </div>
+  <div class="section-head"><div><div class="eyebrow">GAME HUBS</div><h2>Game-specific optimization</h2></div></div>
+  <div class="games"><div class="game-card"><b>FORTNITE</b><span>Performance Mode · FPS · input delay</span></div><div class="game-card"><b>VALORANT</b><span>Low latency · FPS · Windows setup</span></div><div class="game-card"><b>CS2</b><span>FPS · frametime · competitive settings</span></div><div class="game-card"><b>WARZONE</b><span>GPU settings · stutters · FPS</span></div></div>
 </section>
 
-<section class="dark-section" id="troubleshooter">
-  <div class="section-head"><div><div class="eyebrow">TROUBLESHOOTER</div><h2>What problem are you having?</h2></div></div>
-  <div class="symptoms">
-    <button onclick="showTip('fps')">Low average FPS</button>
-    <button onclick="showTip('stutter')">Stutters / 1% lows</button>
-    <button onclick="showTip('input')">Input feels delayed</button>
-    <button onclick="showTip('ping')">High ping</button>
-    <button onclick="showTip('usage')">High CPU usage</button>
-  </div>
-  <div id="tip" class="tip">Choose a symptom above.</div>
-</section>
-
-<section class="section about" id="about">
-  <div class="eyebrow">ABOUT FRAMEFORGE</div>
-  <h2>Optimization without the snake oil.</h2>
-  <p>FrameForge is built around transparent tweaks: explain what a setting does, change one thing at a time, measure the result, and keep a way back.</p>
+<section class="dark-section" id="about">
+  <div class="about"><div class="eyebrow">ABOUT FRAMEFORGE</div><h2>Optimization without the snake oil.</h2><p>FrameForge is built around practical steps: use official drivers, make understandable changes, measure the result, and keep a way back. Advanced options such as AtlasOS are clearly marked as optional.</p></div>
 </section>
 </main>
-
 <footer><span>© 2026 FrameForge</span><span>Independent gaming optimization resource</span></footer>
-<script src="script.js"></script>
 </body>
 </html>
